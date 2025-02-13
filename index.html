@@ -1,1 +1,40 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Planner</h1>
+        <form id="food-planner-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="diet-type">Diet Type:</label>
+            <select id="diet-type">
+                <option value="none">Select Diet Type</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="keto">Keto</option>
+                <option value="paleo">Paleo</option>
+                <option value="gluten-free">Gluten-Free</option>
+            </select>
+
+            <label for="meal-preferences">Meal Preferences:</label>
+            <textarea id="meal-preferences" placeholder="List your meal preferences" required></textarea>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <div id="user-data" class="hidden">
+            <h2>Your Food Plan</h2>
+            <p id="summary"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
